@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"/>
+
+    <!-- Linear Layout for Login -->
+    <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="714dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:padding="16dp">
+        <!-- Logo Image -->
+        <!-- Title for Login Page -->
+        <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="197dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/logo3"/>
+        <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+
+                android:textColor="@android:color/black"
+                android:textSize="24sp"/>
+
+        <!-- Email EditText -->
+        <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Email"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"/>
+
+        <!-- Password EditText -->
+        <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Password"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:inputType="textPassword"/>
+
+        <!-- Login Button -->
+        <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Login"/>
+
+    </LinearLayout>
+
+</FrameLayout>
