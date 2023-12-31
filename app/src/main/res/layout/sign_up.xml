@@ -57,7 +57,7 @@
 
         <!-- Email EditText -->
         <EditText
-                android:id="@+id/emailEditText"
+                android:id="@+id/emailSignUpEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -67,7 +67,7 @@
 
         <!-- Password EditText -->
         <EditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/passwordSignUpEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -78,7 +78,7 @@
 
         <!-- Register Button -->
         <Button
-                android:id="@+id/registerButton"
+                android:id="@+id/signUpButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,14 +19,16 @@ public class MainActivity extends AppCompatActivity {
     EditText mail;
     EditText password;
     Button btn;
-//    @SuppressLint("MissingInflatedId")
+    TextView signUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        mail = (EditText) findViewById(R.id.mail);
-        password = (EditText) findViewById(R.id.pass);
-        btn = (Button) findViewById(R.id.loginBtn);
+
+        mail = (EditText) findViewById(R.id.emailLogInEditText);
+        password = (EditText) findViewById(R.id.passwordEditText);
+        btn = (Button) findViewById(R.id.loginSignupButton);
+        signUp = (TextView) findViewById(R.id.toggleTextView);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
 //                    Log.d("MyApp", "after statement");
                 }
 
+            }
+        });
+
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                startActivity(intent);
             }
         });
 

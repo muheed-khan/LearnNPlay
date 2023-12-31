@@ -13,6 +13,24 @@
         android:theme="@style/Theme.LearnNPlay"
         tools:targetApi="31">
         <activity
+            android:name=".ParentTeacherChatBox"
+            android:exported="false" />
+        <activity
+            android:name=".about"
+            android:exported="false" />
+        <activity
+            android:name=".Shapes"
+            android:exported="false" />
+        <activity
+            android:name=".Colors"
+            android:exported="false" />
+        <activity
+            android:name=".numbers"
+            android:exported="false" />
+        <activity
+            android:name=".alphabets"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,7 +39,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomePage"/>
+        <activity android:name=".HomePage" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".parentFeedBack" />
     </application>
 
 </manifest>

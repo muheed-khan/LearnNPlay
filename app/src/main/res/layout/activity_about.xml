@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back2"
+            android:scaleType="centerCrop" />
+
+    <!-- Linear Layout for "About Me" -->
+    <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="714dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:padding="16dp">
+        <!-- Progress Section -->
+        <TextView
+                android:id="@+id/progressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Your Progress:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        <ProgressBar
+                android:id="@+id/progressProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="0"/>
+        <!-- Feedback Section -->
+
+        <Button
+            android:id="@+id/contactTecaherButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Contact Class Teacher"/>
+        <TextView
+                android:id="@+id/feedbackLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Give Feedback about the app:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+        <EditText
+                android:id="@+id/feedbackTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:hint="Type your feedback here..."
+                android:inputType="textMultiLine"
+                android:minLines="3"/>
+
+        <Button
+                android:id="@+id/submitFeedbackButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:text="Submit Feedback"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

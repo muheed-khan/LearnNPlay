@@ -33,7 +33,7 @@
 
     <!-- Username EditText -->
     <EditText
-            android:id="@+id/mail"
+            android:id="@+id/emailLogInEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -58,7 +58,7 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mail" />
+            app:layout_constraintTop_toBottomOf="@+id/emailLogInEditText" />
 
     <!-- Login/Signup Button -->
     <Button
