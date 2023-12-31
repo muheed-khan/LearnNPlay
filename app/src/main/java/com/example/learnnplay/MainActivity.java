@@ -20,21 +20,17 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
     Button btn;
     TextView signUp;
-//    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-//<<<<<<< Updated upstream
-        mail = (EditText) findViewById(R.id.emailEditText);
+
+        mail = (EditText) findViewById(R.id.emailLogInEditText);
         password = (EditText) findViewById(R.id.passwordEditText);
         btn = (Button) findViewById(R.id.loginSignupButton);
-//=======
-        mail = (EditText) findViewById(R.id.mail);
-        password = (EditText) findViewById(R.id.pass);
-        btn = (Button) findViewById(R.id.loginBtn);
         signUp = (TextView) findViewById(R.id.toggleTextView);
-//>>>>>>> Stashed changes
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
