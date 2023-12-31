@@ -38,6 +38,7 @@
         </activity>
         <activity android:name=".HomePage"/>
         <activity android:name=".SignUp"/>
+        <activity android:name=".parentFeedBack"/>
     </application>
 
 </manifest>
