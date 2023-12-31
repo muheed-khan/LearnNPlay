@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.learnnplay.R;
 
 public class HomePage extends AppCompatActivity {
 Button alpha;
@@ -63,8 +62,6 @@ parent.setOnClickListener(new View.OnClickListener() {
         startActivity(intentParent);
     }
 });
-
-
 
     }
 }

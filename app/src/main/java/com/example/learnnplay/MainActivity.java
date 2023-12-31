@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
     Button btn;
     TextView signUp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.passwordEditText);
         btn = (Button) findViewById(R.id.loginSignupButton);
         signUp = (TextView) findViewById(R.id.toggleTextView);
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
