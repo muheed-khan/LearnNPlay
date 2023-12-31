@@ -5,58 +5,57 @@
 
     <!-- Background image -->
     <ImageView
-            android:id="@+id/nbackgroundImageView"
+            android:id="@+id/backgroundImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/back2"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
     <!-- Linear Layout for Quiz -->
     <LinearLayout
             android:layout_width="395dp"
-            android:layout_height="714dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical"
             android:background="@android:color/transparent"
             android:padding="16dp">
 
-        <!-- Set Image in the center -->
+        <!-- Shape Image in the center -->
         <ImageView
-                android:id="@+id/numberImageView"
+                android:id="@+id/shapeImageView"
                 android:layout_width="wrap_content"
-                android:layout_height="402dp"
+                android:layout_height="380dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/nkidsquiz"/>
+                android:src="@drawable/circle"
+                android:layout_marginTop="16dp"/>
 
         <!-- Quiz Question -->
         <TextView
-                android:id="@+id/nquestionTextView"
+                android:id="@+id/questionTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:text="How many Kids are in this picture?"
-                android:textAlignment="center"
+                android:text="What shape is it?"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="24sp"/>
 
         <!-- Options for the Quiz using GridView -->
         <GridView
-                android:id="@+id/noptionsGridView"
+                android:id="@+id/optionsGridView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:numColumns="2"
-                android:verticalSpacing="8dp" />
+                android:verticalSpacing="8dp"/>
 
         <!-- Submit Button -->
         <Button
-                android:id="@+id/nsubmitButton"
+                android:id="@+id/submitButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="136dp"
                 android:layout_marginTop="16dp"
-                android:text="Next Set" />
+                android:text="Next Shape"/>
 
     </LinearLayout>
 
