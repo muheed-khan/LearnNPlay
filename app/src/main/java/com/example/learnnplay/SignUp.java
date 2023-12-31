@@ -39,7 +39,7 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(fullNameStu != null){
-                    Toast.makeText(getApplicationContext(),)
+                    Toast.makeText(getApplicationContext(),"True",Toast.LENGTH_LONG);
                 }
             }
         });
