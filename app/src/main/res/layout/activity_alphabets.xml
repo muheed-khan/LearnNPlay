@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back2"
+            android:scaleType="centerCrop"/>
+
+    <!-- Linear Layout for Quiz -->
+    <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="714dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:padding="16dp">
+
+        <!-- Letter Image in the center -->
+        <ImageView
+                android:id="@+id/letterImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="342dp"
+                android:layout_gravity="center"
+                android:src="@drawable/letterA"
+                android:layout_marginTop="16dp"/>
+
+        <!-- Quiz Question -->
+        <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="What is that Letter??"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"/>
+
+        <!-- Options for the Quiz using GridView -->
+
+        <!-- Submit Button -->
+        <GridView
+                android:id="@+id/optionsGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:numColumns="2"
+                android:verticalSpacing="8dp"/>
+        <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Submit"/>
+
+    </LinearLayout>
+
+</FrameLayout>
