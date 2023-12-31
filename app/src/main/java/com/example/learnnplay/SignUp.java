@@ -2,6 +2,7 @@ package com.example.learnnplay;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,12 +35,19 @@ public class SignUp extends AppCompatActivity {
         fullNamePar = (EditText) findViewById(R.id.fullNameParentEditText);
         emailSignUp = (EditText) findViewById(R.id.emailSignUpEditText);
         passSignUp = (EditText) findViewById(R.id.passwordSignUpEditText);
-        btnSignUp = (Button) findViewById(R.id.registerButton);
+        btnSignUp = (Button) findViewById(R.id.signUpButton);
+
         btnSignUp.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                if(fullNameStu != null){
-                    Toast.makeText(getApplicationContext(),"True",Toast.LENGTH_LONG);
+
+                if(fullNameStu.getText().toString() != null && fullNamePar.getText().toString() != null &&
+                        emailSignUp.getText().toString() != null && passSignUp.getText().toString() != null && validateEmail(emailSignUp.getText().toString())
+                ){
+//                  Toast.makeText(getApplicationContext(),"True",Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(SignUp.this,HomePage.class);
+                    startActivity(intent);
                 }
             }
         });
